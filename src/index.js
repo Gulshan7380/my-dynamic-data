@@ -1,17 +1,18 @@
+// React help in crating components and its lifecycle
 import React from 'react';
+
+// to add the React jsx TO BROWSER
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// get access to root element of index.html
+const ele = document.getElementById('root');
+
+// this will add to root element
+const root = ReactDOM.createRoot(ele);
+
+// render React component to browser
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
